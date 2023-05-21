@@ -7,6 +7,7 @@ import Practice from './pages/Practice'
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import GlobalStyle from './GlobalStyle'
+import Model from './pages/Model'
 
 const theme = {
   colors: {
@@ -42,11 +43,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/learn" element={<Learn />}></Route>
-            <Route path="/pratice" element={<Practice />}></Route>
+            <Route path="/practice" element={<Practice />}></Route>
+            <Route path='/model/:modelName' element={<Model />} ></Route>
+
           </Routes>
           <Footer />
         </BrowserRouter>
-      </ThemeProvider></>
+      </ThemeProvider ></>
   )
 }
 

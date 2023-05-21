@@ -72,7 +72,7 @@ const Home = () => {
                     <p className='hero-text'>You can never comprehend sign language until you understand the reason behind it.
                     </p>
                     <NavLink to='/learn'>
-                        <div class="btn slide_right">Get Started </div>
+                        <div className="btn slide_right">Get Started </div>
                     </NavLink>
                 </div>
                 <div className="section-hero-image">

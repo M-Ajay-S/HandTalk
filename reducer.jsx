@@ -5,6 +5,12 @@ const reducer = (state, action) => {
             letters: action.payload
         }
     }
+    if (action.type === 'GET_LETTERCLASS') {
+        return {
+            ...state,
+            letterClass: action.payload
+        }
+    }
     return state
 }
 

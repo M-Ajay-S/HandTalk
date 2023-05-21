@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useReducer } from "react";
-import data from "./letter"
+import { letter, letterClass } from "./data"
 import reducer from "./reducer";
 
 
 const AppContext = React.createContext()
 
 const initialState = {
-    letters: []
+    letters: [],
+    letterClass: []
 }
 
 const AppProvider = ({ children }) => {
@@ -14,16 +15,23 @@ const AppProvider = ({ children }) => {
     const getLetters = () => {
         return dispatch({
             type: "GET_LETTERS",
-            payload: data
+            payload: letter
         }
 
         )
+    }
+    const getLetterClass = () => {
+        return dispatch({
+            type: 'GET_LETTERCLASS',
+            payload: letterClass
+        })
     }
 
 
 
     useEffect(() => {
         getLetters()
+        getLetterClass()
     }, [])
 
 

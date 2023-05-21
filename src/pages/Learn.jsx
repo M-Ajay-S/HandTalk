@@ -5,7 +5,7 @@ import { styled } from 'styled-components'
 
 
 const Wrapper = styled.section`
-padding: 9rem 0;
+padding: 9rem 1rem;
 background-color: ${({ theme }) => theme.colors.black};
 .title{
     color: white;

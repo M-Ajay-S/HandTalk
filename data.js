@@ -1,4 +1,4 @@
-const data = [
+const letter = [
     "A",
     "B",
     "C",
@@ -26,4 +26,6 @@ const data = [
     "Y",
     "Z"
 ]
-export default data
+
+const letterClass = ['adf', 'begm', 'lnst', 'rwc', 'oyhk', 'uqij', 'vpxz']
+export { letter, letterClass }
